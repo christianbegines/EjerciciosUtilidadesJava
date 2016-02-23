@@ -66,6 +66,11 @@ public class PruebaPadron {
         System.out.println(padron.darBaja(p3));
         System.out.println(padron.darBaja(p2));
         System.out.println(padron.buscar(true));
+        
+        
+        //personas para odenar
+        
+        
     }
     
 }

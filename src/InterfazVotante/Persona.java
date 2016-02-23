@@ -1,7 +1,7 @@
 
 package InterfazVotante;
 
-public abstract class Persona {
+public abstract class Persona implements Comparable<Persona> {
 
     protected String nombre;
     protected String apellido;
@@ -51,5 +51,21 @@ public abstract class Persona {
         
         return msg;
     };
-// fíjate no hay implementación
+
+    @Override
+    public int compareTo(Persona p) {
+      int resul=0;
+        if(this.anyos>p.anyos){
+            resul=1;
+            
+        }else 
+            if(this.anyos<p.anyos){
+                resul=-1;
+            }  
+                
+        return resul;
+    }
+
+    
+    
 }
