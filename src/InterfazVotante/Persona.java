@@ -1,4 +1,3 @@
-
 package InterfazVotante;
 
 public abstract class Persona implements Comparable<Persona> {
@@ -39,33 +38,34 @@ public abstract class Persona implements Comparable<Persona> {
     public static int getNumPersonas() {
         return numPersonas;
     }
-    
-    
-    
 
-    public  String datos(){
+    public String datos() {
         String msg;
         msg = " El nombre es: " + nombre;
         msg += " \n El apellido es: " + apellido;
-        msg += " \n La edad es: " + anyos + "\n"; 
-        
+        msg += " \n La edad es: " + anyos + "\n";
+
         return msg;
-    };
+    }
 
     @Override
-    public int compareTo(Persona p) {
-      int resul=0;
-        if(this.anyos>p.anyos){
-            resul=1;
-            
-        }else 
-            if(this.anyos<p.anyos){
-                resul=-1;
-            }  
-                
-        return resul;
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", anyos=" + anyos + '}';
     }
 
     
-    
+
+    @Override
+    public int compareTo(Persona p) {
+        int resul = 0;
+        if (this.anyos > p.anyos) {
+            resul = 1;
+
+        } else if (this.anyos < p.anyos) {
+            resul = -1;
+        }
+
+        return resul;
+    }
+
 }

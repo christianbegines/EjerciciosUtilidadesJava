@@ -51,6 +51,7 @@ public class PruebaInterfaz {
         System.out.println("El número total de personas es: " + Persona.getNumPersonas());
         
         
+        
     }
 
 }

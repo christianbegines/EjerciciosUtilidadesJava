@@ -1,5 +1,7 @@
 package InterfazVotante;
 
+
+
 public class Ciudadano extends Persona implements Votante {
 
     private String dni;
@@ -71,8 +73,12 @@ public class Ciudadano extends Persona implements Votante {
 
     @Override
     public String toString() {
-        return "Ciudadano{" + "dni=" + dni + ", ciudad=" + ciudad + ", candidato=" + candidato + '}';
+        return "Ciudadano{" + "dni=" + dni + ", ciudad=" + ciudad + ", candidato=" + candidato +'}';
     }
+
+
+  
+   
 
  
 }
